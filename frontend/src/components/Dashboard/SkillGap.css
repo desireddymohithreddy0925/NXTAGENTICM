@@ -1,0 +1,123 @@
+.skill-gap-card {
+  background: var(--bg-secondary);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease;
+}
+
+.skill-gap-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.skill-gap-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-gap-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-score {
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.heatmap-bar {
+  display: flex;
+  gap: 2px;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.heat-block {
+  flex: 1;
+  background-color: var(--bg-tertiary);
+  transition: background-color 0.3s ease;
+}
+
+.heat-block.filled {
+  background-color: var(--success);
+}
+
+.heat-block.missed {
+  background-color: var(--error);
+  opacity: 0.8;
+}
+
+.heat-block.empty {
+  background-color: var(--bg-tertiary);
+}
+
+.skill-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.sub-skill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.sub-skill.check {
+  color: var(--success);
+}
+
+.sub-skill.cross {
+  color: var(--error);
+}
+
+.ai-explanation {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(79, 70, 229, 0.05);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.ai-icon-inline {
+  color: var(--accent-primary);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
